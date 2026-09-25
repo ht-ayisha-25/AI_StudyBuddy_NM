@@ -1,0 +1,21 @@
+info:
+  name: AI Summarize Material
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/materials/6ab64acc60c54b268b8baceb/summarize
+  headers:
+    - name: Authorization
+      value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWI2NGE2MDYwYzU0YjI2OGI4YmFjZWEiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc5MDMzMTUwNywiZXhwIjoxNzkwMzMyNDA3fQ.DKGUzOWLFX3l-lf-2Hk7Rw4gnaLGDU4UWTlS4XP0JTA
+    - name: Content-Type
+      value: application/json
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​

@@ -1,0 +1,26 @@
+info:
+  name: Admin Register
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:5000/api/auth/register
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Admin User",
+        "email": "admin@example.com",
+        "password": "adminpass123",
+        "role": "admin"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

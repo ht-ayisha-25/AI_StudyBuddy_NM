@@ -1,0 +1,17 @@
+info:
+  name: Refresh auth token
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:5000/api/auth/refresh
+  headers:
+    - name: x-refresh-token
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhYjI0ZmM5NWI3YTk4NWE3MDZkMmVlOSJ9.73C-T6O4
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

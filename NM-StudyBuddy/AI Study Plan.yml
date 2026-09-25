@@ -1,0 +1,28 @@
+info:
+  name: AI Study Plan
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/materials/6ab64acc60c54b268b8baceb/study-plan
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWI2NGE2MDYwYzU0YjI2OGI4YmFjZWEiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc5MDMzMTUwNywiZXhwIjoxNzkwMzMyNDA3fQ.DKGUzOWLFX3l-lf-2Hk7Rw4gnaLGDU4UWTlS4XP0JTA
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "goal": "Master the topic for exams",
+        "hoursPerDay": 2,
+        "days": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

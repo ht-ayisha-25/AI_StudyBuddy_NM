@@ -1,0 +1,30 @@
+info:
+  name: Upload Material
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/materials/upload
+  headers:
+    - name: Authorization
+      value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWI2NGE2MDYwYzU0YjI2OGI4YmFjZWEiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc5MDMzMTUwNywiZXhwIjoxNzkwMzMyNDA3fQ.DKGUzOWLFX3l-lf-2Hk7Rw4gnaLGDU4UWTlS4XP0JTA
+    - name: Content-Type
+      value: multipart/form-data
+  body:
+    type: multipart-form
+    data:
+      - name: "title "
+        type: text
+        value: "My Study Notes "
+      - name: file
+        type: file
+        value:
+          - c:\Users\htayi\OneDrive\Desktop\NM-Project\NM-StudyBuddy\sample_biology_notes.txt
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

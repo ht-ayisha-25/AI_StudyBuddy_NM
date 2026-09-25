@@ -1,0 +1,19 @@
+info:
+  name: All Materials
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/materials
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWI2MjU3NWRkZGViYjA0ZWFiMjRkZDUiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc5MDMzMDU2MSwiZXhwIjoxNzkwMzMxNDYxfQ.9zeXP9kjnvxtU6pbuw3YNsYH-asjMiTv8MOzpKG-NeI
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​

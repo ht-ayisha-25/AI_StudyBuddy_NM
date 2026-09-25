@@ -1,0 +1,26 @@
+info:
+  name: AI Flash Cards
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:5000/api/materials/6ab24ff25b7a985a706d2eea/flashcards
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhYjI0ZmM5NWI3YTk4NWE3MDZkMmVlOSJ9.xZ8_4k
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "count": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​
